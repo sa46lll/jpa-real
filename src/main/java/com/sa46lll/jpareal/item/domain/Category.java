@@ -1,4 +1,4 @@
-package com.sa46lll.jpareal.domain.item.entity;
+package com.sa46lll.jpareal.item.domain;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,6 @@
-package com.sa46lll.jpareal.domain.member.dao;
+package com.sa46lll.jpareal.member.dao;
 
-import com.sa46lll.jpareal.domain.member.entity.Member;
+import com.sa46lll.jpareal.member.domain.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

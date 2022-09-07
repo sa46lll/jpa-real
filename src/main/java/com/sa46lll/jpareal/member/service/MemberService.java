@@ -1,7 +1,7 @@
-package com.sa46lll.jpareal.domain.member.service;
+package com.sa46lll.jpareal.member.service;
 
-import com.sa46lll.jpareal.domain.member.dao.MemberRepository;
-import com.sa46lll.jpareal.domain.member.entity.Member;
+import com.sa46lll.jpareal.member.dao.MemberRepository;
+import com.sa46lll.jpareal.member.domain.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

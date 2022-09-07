@@ -1,13 +1,10 @@
-package com.sa46lll.jpareal.domain.order.entity;
+package com.sa46lll.jpareal.order.domain;
 
-import com.sa46lll.jpareal.domain.item.entity.Item;
-import com.sa46lll.jpareal.domain.order.entity.Order;
+import com.sa46lll.jpareal.item.domain.Item;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 import static javax.persistence.FetchType.LAZY;
 

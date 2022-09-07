@@ -1,6 +1,6 @@
-package com.sa46lll.jpareal.domain.order.entity;
+package com.sa46lll.jpareal.order.domain;
 
-import com.sa46lll.jpareal.domain.member.entity.Member;
+import com.sa46lll.jpareal.member.domain.Member;
 import lombok.Getter;
 import lombok.Setter;
 

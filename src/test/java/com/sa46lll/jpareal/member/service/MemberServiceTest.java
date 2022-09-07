@@ -1,7 +1,7 @@
-package com.sa46lll.jpareal.domain.member.service;
+package com.sa46lll.jpareal.member.service;
 
-import com.sa46lll.jpareal.domain.member.dao.MemberRepository;
-import com.sa46lll.jpareal.domain.member.entity.Member;
+import com.sa46lll.jpareal.member.dao.MemberRepository;
+import com.sa46lll.jpareal.member.domain.Member;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

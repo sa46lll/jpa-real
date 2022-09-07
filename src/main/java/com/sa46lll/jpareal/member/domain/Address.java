@@ -1,4 +1,4 @@
-package com.sa46lll.jpareal.domain.member.entity;
+package com.sa46lll.jpareal.member.domain;
 
 import lombok.Getter;
 
