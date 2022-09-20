@@ -1,6 +1,6 @@
 package com.sa46lll.jpareal.item.domain;
 
-import com.sa46lll.jpareal.item.dto.UpdateItemDto;
+import com.sa46lll.jpareal.item.dto.UpdateItemRequest;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,12 +26,12 @@ public class Book extends Item {
         return book;
     }
 
-    public void changeBook(UpdateItemDto updateItemDto) {
-        super.setName(updateItemDto.getName());
-        super.setPrice(updateItemDto.getPrice());
-        super.setStockQuantity(updateItemDto.getStockQuantity());
-        this.author = updateItemDto.getAuthor();
-        this.isbn = updateItemDto.getIsbn();
+    public void changeBook(UpdateItemRequest updateItemRequest) {
+        super.setName(updateItemRequest.getName());
+        super.setPrice(updateItemRequest.getPrice());
+        super.setStockQuantity(updateItemRequest.getStockQuantity());
+        this.author = updateItemRequest.getAuthor();
+        this.isbn = updateItemRequest.getIsbn();
 
     }
 

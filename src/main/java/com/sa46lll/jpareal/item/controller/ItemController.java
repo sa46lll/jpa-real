@@ -2,7 +2,7 @@ package com.sa46lll.jpareal.item.controller;
 
 import com.sa46lll.jpareal.item.domain.Book;
 import com.sa46lll.jpareal.item.domain.Item;
-import com.sa46lll.jpareal.item.dto.UpdateItemDto;
+import com.sa46lll.jpareal.item.dto.UpdateItemRequest;
 import com.sa46lll.jpareal.item.service.ItemService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -59,7 +59,7 @@ public class ItemController {
     @PostMapping("/items/{itemId}/edit")
     public String updateItem(@ModelAttribute("form") BookForm bookForm, @PathVariable Long itemId) {
         // 변경감지 버전
-        itemService.changeBook(itemId, UpdateItemDto.of(bookForm));
+        itemService.changeBook(itemId, UpdateItemRequest.of(bookForm));
 
         // merge 버전
         /*

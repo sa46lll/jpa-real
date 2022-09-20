@@ -6,14 +6,14 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class UpdateItemDto {
+public class UpdateItemRequest {
     private String name;
     private int price;
     private int stockQuantity;
     private String author;
     private String isbn;
 
-    public UpdateItemDto(String name, int price, int stockQuantity, String author, String isbn) {
+    public UpdateItemRequest(String name, int price, int stockQuantity, String author, String isbn) {
         this.name = name;
         this.price = price;
         this.stockQuantity = stockQuantity;
@@ -21,8 +21,8 @@ public class UpdateItemDto {
         this.isbn = isbn;
     }
 
-    public static UpdateItemDto of(BookForm bookForm) {
-        return new UpdateItemDto(bookForm.getName(), bookForm.getPrice(),
+    public static UpdateItemRequest of(BookForm bookForm) {
+        return new UpdateItemRequest(bookForm.getName(), bookForm.getPrice(),
                 bookForm.getStockQuantity(), bookForm.getAuthor(), bookForm.getIsbn());
     }
 }

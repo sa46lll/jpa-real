@@ -5,12 +5,15 @@ import com.sa46lll.jpareal.item.domain.Item;
 import com.sa46lll.jpareal.member.dao.MemberRepository;
 import com.sa46lll.jpareal.member.domain.Member;
 import com.sa46lll.jpareal.order.dao.OrderRepository;
+import com.sa46lll.jpareal.order.dao.OrderSearch;
 import com.sa46lll.jpareal.order.domain.Delivery;
 import com.sa46lll.jpareal.order.domain.Order;
 import com.sa46lll.jpareal.order.domain.OrderItem;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Service
 @Transactional(readOnly = true)
@@ -50,5 +53,9 @@ public class OrderService {
         Order order = orderRepository.findOne(orderId);
         order.cancel();
         // jpa 의 변경 감지를 통해 변경된 부분의 업데이트 쿼리를 자동으로 날려줌.
+    }
+
+    public List<Order> findOrders(OrderSearch orderSearch) {
+        return orderRepository.findAllByString(orderSearch);
     }
 }
