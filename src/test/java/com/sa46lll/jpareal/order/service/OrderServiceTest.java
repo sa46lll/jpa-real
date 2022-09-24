@@ -1,12 +1,13 @@
 package com.sa46lll.jpareal.order.service;
 
-import com.sa46lll.jpareal.item.domain.Book;
-import com.sa46lll.jpareal.item.exception.NotEnoughStockException;
-import com.sa46lll.jpareal.member.domain.Address;
-import com.sa46lll.jpareal.member.domain.Member;
-import com.sa46lll.jpareal.order.dao.OrderRepository;
-import com.sa46lll.jpareal.order.domain.Order;
-import com.sa46lll.jpareal.order.domain.OrderStatus;
+import com.sa46lll.jpareal.domain.item.domain.Book;
+import com.sa46lll.jpareal.domain.item.exception.NotEnoughStockException;
+import com.sa46lll.jpareal.domain.member.domain.Address;
+import com.sa46lll.jpareal.domain.member.domain.Member;
+import com.sa46lll.jpareal.domain.order.dao.OrderRepository;
+import com.sa46lll.jpareal.domain.order.domain.Order;
+import com.sa46lll.jpareal.domain.order.domain.OrderStatus;
+import com.sa46lll.jpareal.domain.order.service.OrderService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
