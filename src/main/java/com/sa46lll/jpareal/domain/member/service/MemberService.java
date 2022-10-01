@@ -38,10 +38,7 @@ public class MemberService {
 
     @Transactional
     public Member findOne(Long memberId) {
-        Member member = memberRepository.findOne(memberId);
-        member.setName("test");
-
-        return member;
+        return memberRepository.findOne(memberId);
     }
 
     @Transactional

@@ -19,9 +19,9 @@ public class OrderDto {
 
     public OrderDto(Order order) {
         this.orderId = order.getId();
-        this.name = order.getMember().getName();
+        this.name = order.getMember().getName(); // LAZY 초기화
         this.orderDate = order.getOrderDate();
         this.orderStatus = order.getStatus();
-        this.address = order.getDelivery().getAddress();
+        this.address = order.getDelivery().getAddress(); // LAZY 초기화
     }
 }
