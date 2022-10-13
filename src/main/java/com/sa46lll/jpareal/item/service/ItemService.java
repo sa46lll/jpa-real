@@ -1,7 +1,9 @@
 package com.sa46lll.jpareal.item.service;
 
 import com.sa46lll.jpareal.item.dao.ItemRepository;
+import com.sa46lll.jpareal.item.domain.Book;
 import com.sa46lll.jpareal.item.domain.Item;
+import com.sa46lll.jpareal.item.dto.UpdateItemDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,6 +20,12 @@ public class ItemService {
     @Transactional
     public void saveItem(Item item) {
         itemRepository.save(item);
+    }
+
+    @Transactional
+    public void changeBook(Long itemId, UpdateItemDto updateItemDto) {
+        Book book = (Book) itemRepository.findOne(itemId);
+        book.changeBook(updateItemDto);
     }
 
     public List<Item> findItems() {
